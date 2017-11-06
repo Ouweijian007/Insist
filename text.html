@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>H5</title>
+    <meta name="viewport" content="width=640, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <style>
+    .kk {
+        width: 500px;
+    }
+    
+    .page2-text {
+        position: absolute;
+        z-index: 2;
+        left: 52%;
+        top: 23%;
+        /*    width: 57%;*/
+    }
+    
+    .page1-title {
+        position: absolute;
+        left: 52%;
+        top: 13%;
+        /*    width: 57%;*/
+    }
+    
+    .page1-chuxue {
+        position: absolute;
+        left: 43%;
+        top: 74%;
+        /*    width: 57%;*/
+    }
+    
+    .page1-kaifa {
+        position: absolute;
+        left: 43%;
+        top: 81%;
+    }
+    /*page2*/
+    
+    .page2-1 {
+        position: absolute;
+        left: 13%;
+        top: 8%;
+    }
+    
+    .page2-2 {
+        position: absolute;
+        left: 13%;
+        top: 13%;
+    }
+    
+    .page2-3 {
+        position: absolute;
+        left: 13%;
+        top: 19%;
+    }
+    /*page3*/
+    
+    .page3-1 {
+        position: absolute;
+        left: 20%;
+        top: 42%;
+    }
+    
+    .page3-2 {
+        position: absolute;
+        left: 22%;
+        top: 48%;
+    }
+    
+    .page3-3 {
+        position: absolute;
+        z-index: 1000000;
+        left: 41%;
+        top: 64%;
+    }
+    
+    .page3-4 {
+        position: absolute;
+        z-index: 3;
+        left: 35%;
+        top: 72%;
+    }
+    
+    .page3-5 {
+        position: absolute;
+        left: 27%;
+        top: 40%;
+    }
+    
+    .page3-6 {
+        position: absolute;
+        left: 33%;
+        top: 61%;
+    }
+    
+    .page3-7 {
+        position: absolute;
+        left: 64%;
+        top: 3%;
+    }
+    /*page3*/
+    
+    .page4-1 {
+        position: absolute;
+        top: 10%;
+        left: 16%;
+    }
+    /*page4*/
+    
+    .page4-bg {
+        position: absolute;
+        z-index: 3px;
+        top: 0px;
+        left: 0px;
+        transform: translateX(20%)
+    }
+    
+    .page4-1 {
+        position: absolute;
+        top: 10%;
+        left: 16%;
+    }
+    
+    .page4-2 {
+        position: absolute;
+        top: 10%;
+        left: 16%;
+    }
+    
+    .page4-3 {
+        position: absolute;
+        top: 55%;
+        left: 16%;
+    }
+    
+    .page4-5 {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+    
+    .in {
+        position: absolute;
+        z-index: 9999;
+        background: #ffebd3;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .phone {
+        position: absolute;
+        z-index: 20;
+        top: 20%;
+        left: 20%;
+    }
+    
+    .strat-2 {
+        position: absolute;
+        z-index: 20;
+        top: 27%;
+        left: 23%;
+    }
+    
+    .stop {
+        position: absolute;
+        top: -2%;
+        left: 71%;
+        width: 28%;
+    }
+    
+    .this {
+        position: absolute;
+        z-index: 100;
+        top: 29%;
+        left: 26%;
+        animation: this-an 1s;
+        animation-fill-mode: both;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    }
+    
+    this-an .thisScale {
+        animation: thisScale 2s;
+    }
+    
+    @keyframes this-an {
+        0% {}
+        100% {
+            -webkit-transform: translate(206%, 1100%);
+            transform: translate(236%, 1100%);
+            opacity: .8;
+        }
+    }
+    
+    @keyframes focus {
+        0% {
+            -webkit-transform: scale(1, 1)
+        }
+        50% {
+            -webkit-transform: scale(0.9, 0.9)
+        }
+        100% {
+            -webkit-transform: scale(0.8, 0.8);
+        }
+    }
+    
+    .focus {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        top: 82%;
+        left: 42%;
+        animation: focus 1s infinite;
+        /*                -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;*/
+    }
+    
+    .in-1 {
+        position: absolute;
+        z-index: 111;
+        top: 5%;
+        left: 37%;
+    }
+    
+    .in-2 {
+        position: absolute;
+        z-index: 100;
+        top: 9%;
+        left: 22%;
+    }
+    
+    .aui {
+        width: 78%;
+    }
+    /*page5*/
+    
+    .iphone {
+        position: absolute;
+         z-index: 10000;
+        top: 38%;
+        left: 23%;
+        
+    }
+    .iphoneShake{
+        animation: shake 0.2s infinite 2s;
+    }
+    @-webkit-keyframes shake {
+        0% {
+            -webkit-transform: translate(2px, 2px);
+        }
+        25% {
+            -webkit-transform: translate(-2px, -2px);
+        }
+        50% {
+            -webkit-transform: translate(0px, 0px);
+        }
+        75% {
+            -webkit-transform: translate(2px, -2px);
+        }
+        100% {
+            -webkit-transform: translate(-2px, 2px);
+        }
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: translate(2px, 2px);
+        }
+        25% {
+            transform: translate(-2px, -2px);
+        }
+        50% {
+            transform: translate(0px, 0px);
+        }
+        75% {
+            transform: translate(2px, -2px);
+        }
+        100% {
+            transform: translate(-2px, 2px);
+        }
+    }
+    
+    #page-5-img {
+        position: absolute;
+        top: 29%;
+        left: 63%;
+    }
+    .page5-info{
+          position: absolute;
+          display: none;
+
+        top: 63%;
+        left: 4%; 
+    }
+       .page5-info2{
+          position: absolute;
+          z-index: 18;
+          display: none;
+
+        top: 75%;
+        left: 19%; 
+    }
+       .page5-info3{
+          position: absolute;
+          z-index: 20;
+          display: none;
+
+        top: 82%;
+        left: 18%; 
+    }
+    </style>
+</head>
+
+<body>
+    <div id="page-hd">
+        <div id="loading">
+            <div class="spinner">
+                <div class="spinner-container container1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="in" style="display:none">
+        <img class="phone pt-page-moveCircle" src="img/phone.png" alt="">
+        <img class="strat-2 pt-page-scaleUp pt-page-delay1000" src="img/strat-2.jpg" alt="">
+        <img class="stop pt-page-rotatePullRight" src="img/stop.gif" alt="">
+        <img class="this " src="img/this.png" alt="">
+        <img class="focus " src="img/focus.png" alt="">
+        <img class="in-1 pt-page-rotateRoomLeftOut pt-page-delay2500" src="img/in-1.png" alt="">
+        <img class="in-2 pt-page-moveIconUp pt-page-delay3000" src="img/in-2.png" alt="">
+    </div>
+    <div id="page-content" style="display:none">
+        <div class="page page-1 ">
+            <div class="kk">
+                <img src="img/page1-title.png" alt="" class="page1-title pt-page-moveCircle pt-page-delay500">
+                <img src="img/page2-text.png" alt="" class="page2-text pt-page-moveFromRight ">
+                <img src="img/page1-chuxue.png " alt="" class="page1-chuxue pt-page-moveFromLeftFade ">
+                <img src="img/page1-kaifa.png" alt="" class="page1-kaifa pt-page-moveFromRightFade pt-page-delay100">
+            </div>
+        </div>
+        <img src="img/icon_up.png" alt="" class="arrow-up pt-page-moveIconUp">
+        <div class="page page-2 hide">
+            <img class="page2-1 pt-page-rotatePullRight hide" src="img/page2-1.png" alt="">
+            <img class="page2-2 pt-page-rotatePullLeft hide" src="img/page2-2.png" alt="">
+            <img class="page2-3  pt-page-rotateFall  pt-page-delay500 hide" src="img/page2-3.png" alt="">
+        </div>
+        <div class="page page-3 hide">
+            <img class="page3-1  pt-page-rotateUnfoldBottom hide" src="img/page3-1.png" alt="">
+            <img class="page3-2  pt-page-rotateRoomLeftIn hide" src="img/page3-2.png" alt="">
+            <img class="page3-3  pt-page-moveCircle pt-page-delay1500 hide" src="img/page3-3.png" alt="">
+            <img class="page3-4  pt-page-rotateCarouselRightIn hide" src="img/page3-4.png" alt="">
+            <img class="page3-5  pt-page-flipInLeft hide" src="img/page3-5.png" alt="">
+            <img class="page3-6  pt-page-rotateInNewspaper pt-page-delay1000 hide" src="img/page3-6.png" alt="">
+            <img class="page3-7  pt-page-rotateFall hide" src="img/page3-7.png" alt="">
+        </div>
+        <div class="page page-4 hide">
+            <img class="page4-1 pt-page-rotateCubeLeftIn hide" src="img/page4-1.png" alt="">
+            <img class="page4-2  pt-page-moveCircle hide" src="img/page4-2.png" alt="">
+            <img class="page4-3 pt-page-delay2000 pt-page-rotateCubeBottomIn hide" src="img/page4-3.png" alt="">
+            <img class="page4-5  pt-page-delay1000 pt-page-rotateCarouselTopIn hide" src="img/page4-5.png" alt="">
+            <img class="page4-bg pt-page-delay2000 pt-page-moveIconLeft " src="img/page4-bg.png" alt="">
+        </div>
+        <div class="page page-5 hide">
+            <img id="page-5-img" class="pt-page-scaleUp" hide " src="img/HTML.png " alt=" ">
+               <img   class="iphone iphoneShake " hide" src="img/iphone.png" alt="">
+               <img   class="page5-info" hide" src="img/page5-info.png" alt="" >
+               <img   class="page5-info2 pt-page-scaleUp" hide" src="img/page5-info2.png" alt="" >
+               <img   class="page5-info3 pt-page-scaleUp" hide" src="img/page5-info3.png" alt="" >
+        </div>
+        <!--      <div class="page page-6 hide"></div>
+        <div class="page page-7 hide"></div>
+        <div class="page page-8 hide"></div>
+        <div class="page page-9 hide">
+            <div class="btn-group">
+                <a href="http://www.jq22.com/">
+                    <img class="pt-page-rotateUnfoldTop hide" src="img/btn_joinus.png" alt="">
+                </a>
+                <br>
+                <a href="http://www.jq22.com/">
+                    <img class="pt-page-rotateUnfoldTop hide" src="img/btn_weixin.png" alt="">
+                </a>
+            </div>
+        </div> -->
+        <audio src="1.mp3"  autoplay="autoplay" loop="loop" id="audio" hidden="hidden" id="audios"></audio>
+        <div id="audioPlay" class="rotate"></div>
+    </div>
+    <div id="page-ft"></div>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
+<script>
+//开关音乐
+var x = document.getElementById("audio");
+var kk=""
+$(function() {
+
+
+
+    $("#audioPlay").tap(
+        function() {
+            $("#audioPlay").toggleClass("rotate");
+            if ($("#audioPlay").hasClass("rotate")) { //判断div是否包含指定类名，并指定音乐是否播放
+                x.play();
+
+            } else {
+                x.pause();
+            }
+
+            console.log(222);
+            //  $("#page-content").hide();
+            // $(".in").show()
+        }
+    )
+
+
+    $(".focus").doubleTap(function() {
+        x.play();
+        x.loop = true
+
+        // $(".in").hide();
+        $(".in").addClass('pt-page-scaleDown');
+        $(".in").css('background', 'none');
+        function focus(){$(".in").css('display', 'none');}
+     
+
+        $(".page-1").addClass('pt-page-scaleUp pt-page-delay300');
+        $("#page-content").show();
+        setTimeout(focus, 1500)
+    })
+
+//切换图片
+    setTimeout(function() {
+        $(" .focus").show("slow")
+    }, 3200)
+
+
+    var imgs = ["HTML.png", "CSS.png", "JS.png"]; //（设定想要显示的图片）
+    var i = 0;
+
+    
+
+$(".iphone").tap(function(){
+    $(".page5-info").show().addClass('pt-page-scaleUp');
+    $(this).removeClass('iphoneShake');
+    x.src="1.mp3"
+
+
+})
+
+$(".page5-info").tap(function(){
+    $(".page5-info2").show();
+     $(".page5-info3").show();
+})
+
+$(".page5-info2").tap(function(){
+     $(".page-5").addClass('page-55');
+     $(this).hide()
+})
+$(".page5-info3").tap(function(){
+    $(this).hide()
+
+    function time1() {
+        i++;
+        i = i % 3; //         超过2则取余数，保证循环在0、1、2之间
+        document.getElementById("page-5-img").src = "./img/" + imgs[i];
+
+    };
+
+    clearInterval(kk)
+    kk=setInterval(time1, 800);
+})
+
+})
+
+
+</script>
